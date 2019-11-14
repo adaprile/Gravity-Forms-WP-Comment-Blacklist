@@ -1,6 +1,6 @@
 # Gravity Forms Blacklist
 
-This filter was created for the WP Gravity Forms Plugin. It will use the WordPress Comment Blacklist to validate the fields in a Gravity Form. If a field value contains any of the words in the blacklist, validation will fail and the form will not be submitted.
+This filter was created to help combat SPAM for the WP Gravity Forms Plugin. It will use the WordPress Comment Blacklist to validate the fields in a Gravity Form. If a field value contains any of the words in the blacklist, validation will fail and the form will not be submitted.
 
 ## How to Use
 
