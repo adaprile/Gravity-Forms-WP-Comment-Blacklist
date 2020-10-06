@@ -1,8 +1,13 @@
 /*Gravity Forms Filter to Use WP 'Comment Blacklist' as Validation Parameter*/
 add_filter( 'gform_validation', 'custom_validation' );
 function custom_validation( $validation_result ) {
-    
-	$blacklisted = get_option('blacklist_keys');
+    if ( false === get_option( 'disallowed_keys' ) ) {
+    // Assume this is WP < 5.5. Option does not exist.
+		$blacklisted = get_option('blacklist_keys');
+		} else {
+	// Assume this is WP >= 5.5
+		$blacklisted = get_option('disallowed_keys');
+	}
 	//Turn WP Blacklist Words into Array
 	$badWords = preg_split("/[\s,]+/", $blacklisted);
 	//Function to Check Submitted Field Value Against Blacklist Array. Will be Called in the Fields Loop.

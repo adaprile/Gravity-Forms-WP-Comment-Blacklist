@@ -1,12 +1,12 @@
 # Gravity Forms Blacklist
 
-This filter was created to help combat SPAM for the WP Gravity Forms Plugin. It will use the WordPress Comment Blacklist to validate the fields in a Gravity Form. If a field value contains any of the words in the blacklist, validation will fail and the form will not be submitted.
+This filter was created to help combat SPAM for the WP Gravity Forms Plugin. It will use the WordPress Disallowed Comment Keys to validate the fields in a Gravity Form. If a field value contains any of the words in the blacklist, validation will fail and the form will not be submitted.
 
 ## How to Use
 
 * Add the filter to your WordPress theme's 'functions.php' file.
 
-* In your WordPress dashboard go to 'Settings > Discussion > Comment Blacklist'. Add the words you would like blacklisted, one per line. Or you can use the list I provided in this repository
+* In your WordPress dashboard go to 'Settings > Discussion > Disallowed Comment Keys' (formerly known as 'Comment Blacklist' and 'Comment Blocklist' in WP versions < 5.5>). Add the words you would like blacklisted, one per line. Or you can use the list I provided in this repository
 
 * That's all! Now when a field value contains a match to any of the lines in the blacklist, the form submission will fail.
 
@@ -23,6 +23,7 @@ You can customize the validation message by editing *line 26*. I have it set to 
 * [Using the Gravity Forms "gform_validation" Hook](https://docs.gravityforms.com/using-gform-validation-hook/) - I based my code off this example from the official GF docs.
 * [WP Codex - Comment Blacklist](https://codex.wordpress.org/Combating_Comment_Spam#Comment_Blacklist) - WP Codex Comment Blacklist info
 * [Wordpress Comment Blacklist by splorp](https://github.com/splorp/wordpress-comment-blacklist) - Regularly updated blacklist with over 38,000 entries.
+* [Codebase language improvements in 5.5](https://make.wordpress.org/core/2020/07/23/codebase-language-improvements-in-5-5/) - Explains updates to Option Key Names in WP v5.5
 
 ## Author
 
