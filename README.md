@@ -16,7 +16,7 @@ This filter was created to help combat SPAM for the WP Gravity Forms Plugin. It 
 
 This filter will apply the blacklist validation for all fields in a Gravity Form. 
 
-You can customize the validation message by editing *line 26*. I have it set to 'This field contains bad words!'.
+You can customize the validation message by editing *line 31*. I have it set to 'This field contains bad words!'.
 
 ### More Documentation
 
