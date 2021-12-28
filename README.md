@@ -7,7 +7,7 @@ This filter was created to help combat SPAM for the WP Gravity Forms Plugin. It 
 * Add the filter to your WordPress theme's 'functions.php' file.
 
 * In your WordPress dashboard go to 'Settings > Discussion > Disallowed Comment Keys' (formerly known as 'Comment Blacklist' and 'Comment Blocklist' in WP versions < 5.5). Add the words you would like blacklisted, one per line. 
-    * You can use the primitive list I provided in this repository, or consider using [Wordpress Comment Blacklist by splorp](https://github.com/splorp/wordpress-comment-blacklist) - This is a regularly updated blacklist with over 42,000 entries.
+    * You can use the primitive list I provided in this repository, or consider using [Wordpress Comment Blacklist by splorp](https://github.com/splorp/wordpress-comment-blacklist) - This is a regularly updated blacklist with over 45,000 entries.
 
 * That's all! Now when a field value contains a match to any of the lines in the blacklist, the form submission will fail.
 
